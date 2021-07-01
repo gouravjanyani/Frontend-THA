@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en-us">
+    <style>
+      body{
+          margin-top: 0;
+      }
+      #doc{
+          height: 1900px;
+      }
+      img{
+          margin-left: 40px;
+          padding-right: 10px  ;
+          float: left;
+          vertical-align: center;
+      }
+
+
+      ul{
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          list-style-type: none;
+          margin: 0px 10px;
+          width: 100%;
+          padding-left: 270px;
+          z-index: 2;
+
+      }
+      li{
+          display: inline ;
+      }
+      li a{
+          display: inline;
+          padding: 50px 30px;
+          color: black;
+          text-decoration: none;
+          font-size: large;
+      }
+      li>a:hover:first-child{
+          border-bottom: 5px solid blue;
+      }
+      .dropdown-content a{
+          display: block;
+      }
+      .dropdown{
+          position: relative;
+      }
+      .dropdown-content{
+          display: none;
+          position: absolute;
+
+      }
+      .dropdown:hover{
+          border: none;
+      }
+      .dropdown:hover .dropdown-content{
+          margin-top: 50px;
+          left: 0;
+          width: 150px;
+          display: block;
+          background-color:#f2f2f2;
+          text-align: center;
+          box-shadow: 5px 10px 18px #888888;
+      }
+      .dropdown-content a{
+          padding: 10px;
+
+      }
+
+      ul::after{
+          content=" ";
+          clear: both;
+          display: table;
+
+      }
+      #training{
+         border-radius: 20px;
+         position: relative;
+         margin-left: 100px;
+         display: inline-block;
+         box-shadow: 5px 10px 18px #888888;
+
+
+      }
+      #template{
+          border-radius: 20px;
+          position: relative;
+          margin-right: 100px;
+          display: inline-block;
+          box-shadow: 5px 10px 18px #888888;
+      }
+      #cover{
+          width: 1800px;
+          overflow: hidden;
+          margin: auto;
+          padding: 20px;
+          margin-left: 100px;
+      }
+      .dropdown-content>a:hover{
+          background-color: #e0dcdc;
+          border-left: 5px solid #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="doc">
+      <header id="navbar">
+        <img
+          width="250"
+          height="100"
+          src="https://www.trubainstitute.ac.in/wp-content/uploads/2021/06/TRUBA-GROUP-OF-INSTITUTES-2.png"
+        />
+        <br />
+        <br />
+        <nav>
+          <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li class="dropdown">
+              <a class="dropbtn" href="">About</a>
+              <div class="dropdown-content">
+                <a href="https://www.trubainstitute.ac.in/about-truba-group/"
+                  >About TRUBA</a
+                >
+                <a href="https://www.trubainstitute.ac.in/infrastructure/"
+                  >Infrastructure</a
+                >
+                <a
+                  href="https://www.trubainstitute.ac.in/truba-testing-lab-and-research-cente%e2%80%8br/"
+                  >NABL Lab</a
+                >
+                <a href="https://www.trubainstitute.ac.in/campus-life/"
+                  >Campus Life</a
+                >
+                <a href="https://www.trubainstitute.ac.in/our-clubs/"
+                  >Our Clubs</a
+                >
+                <a href="https://www.trubainstitute.ac.in/sports-club/"
+                  >Sports-Club</a
+                >
+                <a href="https://www.trubainstitute.ac.in/anti-ragging/"
+                  >Anti-Ragging</a
+                >
+                <a herf="https://www.trubainstitute.ac.in/stories/">Blog</a>
+              </div>
+            </li>
+            <li><a href="">Colleges</a></li>
+            <li><a href="">Admission</a></li>
+            <li><a href="">Our Resource</a></li>
+            <li><a href="">Placements</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">ERP Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div id="cover">
+        <img
+          id="training"
+          src="Top Engineering College in Bhopal MP _ Best Engineering College in MP _ TRUBA_files/3.jpg"
+          alt="trainings"
+          height="700px"
+        />
+
+        <img
+          id="template"
+          src="Top Engineering College in Bhopal MP _ Best Engineering College in MP _ TRUBA_files/1.jpg"
+          alt="template"
+          height="700px"
+        />
+      </div>
+      <br /><br /><br />
+    </div>
+  </body>
+</html>
